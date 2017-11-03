@@ -1,0 +1,68 @@
+.sticker__sold-out, .sticker__on-sale {
+  position: absolute;
+  background: crimson;
+  border: 1px solid crimson;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  top: -15px;
+  left: -15px;
+}
+.sticker__sold-out p, .sticker__on-sale p {
+  font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+//This is the button ID
+#AddToCart {
+  width: 100%;
+  //this calls the animation keyframes
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  // How long the animation runs
+  animation-duration: 6s;
+  // Makes the button animate forever
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+//These are the keyframes for all the animation of the button
+@keyframes shake {
+    from, 16%, to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    1.6%, 4.8% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    8%, 11.2%, 14.4% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    9.6%, 12.8% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
+    3.2%, 6.4% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+}

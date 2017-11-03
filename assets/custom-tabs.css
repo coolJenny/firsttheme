@@ -1,0 +1,80 @@
+.tabs {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background: #FAFAFA;
+}
+.tab-content {
+  padding: 20px 0 0;
+}
+.tab-link {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  text-align: center;
+  font-weight: 600;
+  color: #bbb;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  display: table-cell;
+}
+.tab-link:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* .tab-link:first-child{
+  border-left:none !important; 
+}
+.tab-link:last-child{
+  border-right:none !important; 
+} */
+.tab-link.current {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #fff;
+  background: #FFF;
+}
+.tab-title {
+  display: block;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.current {
+  display: block;
+}
+.tab-link p {
+  margin: 0;
+}
+.tab-title:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+.tab-title[for*='1']:before {
+  content: '\f129';
+}
+.tab-title[for*='2']:before {
+  content: '\f005';
+}
+.tab-title[for*='3']:before {
+  content: '\f128';
+}
+@media screen and (max-width: 650px) {
+  .tab-title {
+    font-size: 0;
+  }
+  .tab-title:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tab-title {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,41 @@
+/* fixes up margin issues to display properly*/
+.no-marg-left {
+  margin-left: 0px;
+}
+/* This makes the user image round rather than square */
+#user-pic {
+  border-radius: 50%;
+}
+/* font-size to work with my theme design and margin to work with social sharing buttons underneath */
+.user-details {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* smaller font size and more greyed out color for the date/time details */
+#user-date {
+  margin-bottom: 9px;
+  font-size: 12px;
+  color: #717171;
+}
+/* This is all the "user" details that will pop up */
+.user-purchase {
+  /* This border was added to work with my design */
+  /* border-top: 1px solid #e3e3e3; */
+  padding: 10px 0;
+  margin-top: 10px;
+  /* This will make sure nothing is shown at first*/
+  display: none;
+}
+.user-details span {
+  /* Fixes the spacing issue for the #city underline(border-bottom) */
+  display: inline-block;
+}
+#fName {
+  /* Makes the name bold */
+  font-weight: bold;
+}
+/* Dotted underline for the city */
+#city {
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+}
