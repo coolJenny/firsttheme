@@ -1,2 +1,26 @@
-Shopify Theme
-For count down and color swatches.
+# Shopify Theme Readme
+
+This README For count down and color swatches.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+
